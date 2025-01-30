@@ -1,0 +1,63 @@
+/* Story.css */
+.story-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin-top: 12%;
+  }
+  
+  .terminal {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #0f0;
+    border: 3px solid #0f0;
+    font-family: 'VT323', monospace;
+    animation: glow 2s infinite;
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px #0f0; }
+    50% { box-shadow: 0 0 20px #0f0; }
+    100% { box-shadow: 0 0 5px #0f0; }
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    border-right: .15em solid #0f0;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end),
+               blink-caret .75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0f0; }
+  }
+  
+  .continue-btn {
+    background: transparent;
+    border: 2px solid #0f0;
+    color: #0f0;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'VT323', monospace;
+  }
+  
+  .continue-btn:hover {
+    background: #0f0;
+    color: #000;
+  }
