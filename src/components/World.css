@@ -1,0 +1,128 @@
+/* World.css */
+.world-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  .cyber-carousel {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 20px;
+  }
+  
+  .navigation-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cyber-arrow {
+    background: none;
+    border: none;
+    color: #0f0;
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-shadow: 0 0 10px #0f0;
+    transition: all 0.3s;
+    padding: 5px;
+    width: 10%; /* Reduced width */
+    height: 50%;
+  }
+  
+  .cyber-arrow:hover {
+    text-shadow: 0 0 15px #0f0;
+    transform: scaleX(1.05) scaleY(1.02); 
+    background: rgba(0, 255, 0, 0.1)
+  }
+  .cyber-arrow:focus {
+    outline: none;
+    /* border: 1px solid #0f0; Subtle focus outline */
+  }
+  
+  .opponent-card {
+    border: 3px solid #0f0;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    animation: glow 2s infinite;
+  }
+  
+  .hacker-terminal {
+    font-family: 'VT323', monospace;
+    color: #0f0;
+    text-align: center;
+  }
+  
+  .terminal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .blinking-cursor {
+    animation: blink 1s step-end infinite;
+  }
+  
+  .terminal-body {
+    text-align: left;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid #0f0;
+  }
+  
+  .view-button {
+    background: transparent;
+    border: 2px solid #0f0;
+    color: #0f0;
+    padding: 10px 20px;
+    margin-top: 1rem;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    transition: all 0.3s;
+  }
+  
+  .view-button:hover {
+    background: #0f0;
+    color: #000;
+  }
+  
+  .attack-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 15px 30px;
+    background: #ff0033;
+    border: 2px solid #ff0033;
+    color: #fff;
+    font-family: 'VT323', monospace;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-shadow: 0 0 10px #ff0033;
+    box-shadow: 0 0 15px rgba(255, 0, 51, 0.5);
+  }
+  
+  .attack-button:hover {
+    background: #ff0022;
+    box-shadow: 0 0 25px rgba(255, 0, 51, 0.8);
+    transform: scale(1.05);
+  }
+
+ 
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px #0f0; }
+    50% { box-shadow: 0 0 20px #0f0; }
+    100% { box-shadow: 0 0 5px #0f0; }
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
