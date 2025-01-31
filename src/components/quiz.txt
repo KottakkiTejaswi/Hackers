@@ -1,0 +1,82 @@
+const questions = [
+  // Existing questions...
+  {
+    question: "> WHAT'S THE PRIMARY PURPOSE OF A FIREWALL?",
+    options: [
+      "BLOCK PHYSICAL INTRUSIONS",
+      "FILTER NETWORK TRAFFIC", 
+      "PREVENT VIRUSES",
+      "ENCRYPT DATA"
+    ],
+    correct: 1
+  },
+  // ... other existing questions
+
+  // New SQL Injection Questions
+  {
+    question: "> WHAT IS THE PRIMARY PURPOSE OF SQL INJECTION?",
+    options: [
+      "STEAL DATABASE INFORMATION",
+      "ENCRYPT DATABASE CONNECTIONS",
+      "IMPROVE QUERY PERFORMANCE",
+      "BACKUP DATABASE CONTENT"
+    ],
+    correct: 0
+  },
+  {
+    question: "> WHICH IS THE BEST DEFENSE AGAINST SQL INJECTION?",
+    options: [
+      "WEB APPLICATION FIREWALL",
+      "PARAMETERIZED QUERIES",
+      "SSL ENCRYPTION",
+      "REGULAR DATABASE BACKUPS"
+    ],
+    correct: 1
+  },
+  {
+    question: "> WHAT DOES THIS SQL INJECTION PAYLOAD DO: ' OR '1'='1",
+    options: [
+      "DELETES ALL TABLES",
+      "BYPASSES AUTHENTICATION",
+      "EXFILTRATES DATA",
+      "CORRUPTS DATABASE"
+    ],
+    correct: 1
+  },
+  {
+    question: "> WHICH OF THESE IS A BLIND SQL INJECTION TECHNIQUE?",
+    options: [
+      "UNION-BASED",
+      "BOOLEAN-BASED",
+      "ERROR-BASED",
+      "TIME-BASED"
+    ],
+    correct: 3
+  },
+  {
+    question: "> WHAT IS THE MAIN RISK OF SQL INJECTION?",
+    options: [
+      "SLOW NETWORK PERFORMANCE",
+      "UNAUTHORIZED DATABASE ACCESS",
+      "PHISHING ATTACKS",
+      "MALWARE INSTALLATION"
+    ],
+    correct: 1
+  },
+  {
+    question: "> WHICH SQL CLAUSE IS COMMONLY EXPLOITED IN INJECTION?",
+    options: [
+      "SELECT",
+      "WHERE",
+      "UNION",
+      "JOIN"
+    ],
+    correct: 2
+  }
+];
+
+// Update progress bar calculation to:
+<div 
+  className="progress-fill"
+  style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+></div>
